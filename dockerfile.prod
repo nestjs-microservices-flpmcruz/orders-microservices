@@ -16,8 +16,6 @@ FROM node:21-alpine3.19 as build
 ARG ORDERS_DATABASE_URL
 ENV DATABASE_URL=$ORDERS_DATABASE_URL
 
-RUN echo: "DATABASE_URL ::: $DATABASE_URL"
-
 WORKDIR /usr/src/app
 
 # Copiar de deps, los módulos de node
